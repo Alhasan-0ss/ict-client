@@ -64,7 +64,7 @@ function App() {
         const formData = new FormData()
         formData.append('image', image)
         formData.append('registration', registrationNumberInput)
-        fetch('http://localhost:5000/predict', {
+        fetch('https://ict-model.azurewebsites.net', {
             method: 'POST',
             body: formData,
         })
